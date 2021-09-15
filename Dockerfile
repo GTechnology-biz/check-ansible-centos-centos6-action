@@ -20,7 +20,7 @@ RUN yum install --assumeyes libffi-devel \
     wget \
     ansible
 
-COPY https://raw.githubusercontent.com/gdraheim/docker-systemctl-images/master/files/docker/systemctl.py /usr/bin/systemctl
+ADD https://raw.githubusercontent.com/gdraheim/docker-systemctl-images/master/files/docker/systemctl.py /usr/bin/systemctl
 RUN ansible --version
 RUN python --version
 
